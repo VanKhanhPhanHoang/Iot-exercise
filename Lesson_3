@@ -1,0 +1,22 @@
+Sensor: DHT22 (Temperature and Humidity Sensor)
+What it does:
+- Measures temperature and relative humidity in the surrounding environment.
+Electronics/Hardware used:
+- Contains a capacitive humidity sensor and a thermistor (for temperature), along with a microcontroller for digital signal output.
+Analog or Digital:
+- Digital – it outputs data in a digital format via a single-wire protocol.
+Units and Range:
+- Temperature: -40°C to +80°C (±0.5°C accuracy)
+- Humidity: 0% to 100% RH (±2–5% accuracy)
+
+Actuator: SG90 Micro Servo Motor
+What it does:
+- Rotates to a specific angle, often used for controlling movement in devices (e.g., robot arms, sensors, or locks).
+Electronics/Hardware used:
+- Contains a small DC motor, a set of gears, and a control circuit that receives PWM (Pulse Width Modulation) signals to determine position.
+Analog or Digital:
+- Digital control (via PWM) – the signal is digital, though the rotation is analog-like in response.
+Units and Range:
+- Rotation angle: 0° to 180°
+- Voltage: Typically 4.8V to 6V
+- Torque: ~1.8 kg·cm at 4.8V
