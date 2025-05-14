@@ -1,0 +1,18 @@
+| Feature               | Microcontrollers                               | Single-Board Computers                 |
+| --------------------- | ---------------------------------------------- | -------------------------------------- |
+| Purpose               | Designed for specific tasks                    | Designed as general-purpose computers  |
+| Operating System      | Usually no OS (runs bare metal or simple RTOS) | Runs a full OS (e.g., Linux, Windows)  |
+| Power Consumption     | Very low                                       | Higher compared to microcontrollers    |
+| Performance           | Limited processing power                       | More powerful (CPU, RAM, GPU)          |
+| Cost                  | Usually cheaper (\$1–\$10)                     | More expensive (\$30–\$100+)           |
+| Boot Time             | Instant or very fast                           | Slower due to OS loading               |
+| Connectivity          | Limited (basic I/O, UART, SPI, I2C)            | Advanced (Wi-Fi, Bluetooth, USB, HDMI) |
+| Use Cases             | Sensors, motors, embedded control              | Web servers, media centers, full apps  |
+
+Reasons to Use a Microcontroller Over an SBC:
+- Low Power Requirement – Ideal for battery-powered or energy-efficient applications like wearables or sensors.
+- Real-Time Control – Better suited for tasks requiring precise timing (e.g., controlling motors, reading sensors).
+
+Reasons to Use a Single-Board Computer Over a Microcontroller:
+- More Computing Power – Suitable for running complex software, multitasking, or graphical interfaces.
+- Better Connectivity & Interfaces – Has built-in support for Wi-Fi, HDMI, USB, and networking, making it ideal for multimedia or web-based applications.
