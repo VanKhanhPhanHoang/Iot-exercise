@@ -1,0 +1,21 @@
+MQTT	and AMQP
+Power Usage:
+MQTT: Designed for low power and limited devices. Lightweight protocol ideal for IoT (e.g. battery-powered sensors).	
+AMQP: Heavier protocol designed for reliability and advanced features. Requires more processing and bandwidth. Not ideal for low-power devices.
+Security: 
+MQTT: Supports TLS/SSL for secure communication. Security depends on broker configuration.	
+AMQP: Also supports TLS and more advanced authentication mechanisms (e.g., SASL). Generally considered more secure and enterprise-ready.
+Message Persistence	
+MQTT: Supports QoS levels 0, 1, and 2, allowing for guaranteed delivery and retained messages if configured.	
+AMQP: Advanced message persistence, transactions, acknowledgments, and queuing built-in. More robust in enterprise scenarios.
+
+MQTT and	HTTP/HTTPS
+Power Usage
+MQTT: Highly efficient. Maintains a long-lived connection with minimal overhead. Ideal for constrained devices.	
+HTTP/HTTPS: Stateless and requires frequent reconnections. More overhead and power usage.
+Security	
+MQTT: Uses TLS for encrypted communication. Less overhead compared to HTTPS.	
+HTTP/HTTPS: HTTPS is secure by design using TLS. Widely adopted and well-supported.
+Message Persistence	
+MQTT: Built-in support for persistent sessions and retained messages. QoS 1 and 2 ensure message delivery if connection drops.	
+HTTP/HTTPS: Stateless; message delivery must be managed manually. No built-in persistence if the client disconnects.
