@@ -1,0 +1,57 @@
+1. Infrastructure as a Service (IaaS)
+Definition:
+IaaS provides fundamental computing resources—such as virtual machines (VMs), networking, and storage—on a pay-as-you-go basis. Users manage the operating systems, applications, and data, while the cloud provider manages the underlying infrastructure.
+
+Example:
+Azure Virtual Machines, Amazon EC2
+
+Use Case:
+Ideal for system administrators or developers who want full control over their environment but don’t want to maintain physical servers.
+
+2. Platform as a Service (PaaS)
+Definition:
+PaaS delivers a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining infrastructure. The cloud provider handles OS, middleware, and runtime.
+
+Example:
+Azure App Service, Google App Engine
+
+Use Case:
+Ideal for developers who want to focus on app development and deployment, rather than managing infrastructure.
+
+3. Serverless (also known as Function as a Service, or FaaS)
+Definition:
+Serverless computing allows developers to write and deploy code without managing servers. The cloud provider automatically provisions, scales, and manages the infrastructure required to run the code.
+
+Example:
+Azure Functions, AWS Lambda
+
+Use Case:
+Great for event-driven applications, APIs, or microservices where code is executed in response to specific events or triggers.
+
+4. Software as a Service (SaaS)
+Definition:
+SaaS provides ready-to-use applications delivered over the internet. The cloud provider manages everything—from infrastructure to data and application logic.
+
+Example:
+Microsoft 365, Google Workspace
+
+Use Case:
+Best for end-users who need access to fully functional software without worrying about how it is hosted or maintained.
+
+Relevant Cloud Offerings for IoT Developers
+IoT (Internet of Things) developers often build systems that connect, manage, and analyze data from physical devices. The following cloud offerings are especially relevant:
+
+1. IaaS
+Why it’s relevant:
+Provides control over networking and virtual machines that can be tailored for edge computing or device simulations. It is useful for custom setups or proprietary communication protocols.
+
+2. PaaS
+Why it’s relevant:
+Simplifies app development and deployment. IoT developers can use services like Azure IoT Hub, which falls under PaaS, to easily connect, monitor, and manage billions of IoT devices.
+
+3. Serverless
+Why it’s relevant:
+Perfect for handling IoT events in real-time. For example, a sensor sending temperature data can trigger an Azure Function to log or analyze that data. It scales automatically and only runs when needed, which is cost-effective.
+
+4. SaaS
+Less relevant to IoT development, but can be used for dashboards or productivity tools (e.g., integrating IoT data into Power BI for visualization).
