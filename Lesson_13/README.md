@@ -12,3 +12,8 @@ This project is deployed using [Netlify](https://www.netlify.com/).
 
 ## How to run locally
 1. Create a `.env` file:
+
+2. Run:
+```bash
+npm install
+npm run dev
