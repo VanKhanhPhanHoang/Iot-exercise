@@ -1,0 +1,6 @@
+ripe banana
+ripe apple
+ripe mangoo
+unripe banana
+unripe apple
+unripe mango
