@@ -1,0 +1,13 @@
+{
+  "geofence": {
+    "lat": 10.762622,
+    "lon": 106.660172,
+    "radius_m": 500
+  },
+  "twilio": {
+    "account_sid": "YOUR_TWILIO_SID",
+    "auth_token": "YOUR_TWILIO_AUTH_TOKEN",
+    "from_number": "+1234567890",
+    "to_number": "+0987654321"
+  }
+}
