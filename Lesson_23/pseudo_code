@@ -1,0 +1,25 @@
+import requests  # For sending command to IoT device via API
+
+def handle_luis_response(luis_response):
+    top_intent = luis_response['topIntent']
+    
+    if top_intent == 'CancelTimer':
+        # Log that the cancel timer intent was detected
+        print("CancelTimer intent recognized.")
+        
+        # Send a cancel command to the IoT device (API request to cancel timer)
+        response = send_cancel_command_to_device()
+        
+        if response.status_code == 200:
+            return "The timer has been successfully cancelled."
+        else:
+            return "Failed to cancel the timer. Please try again."
+    else:
+        return "Sorry, I didn't understand that command."
+
+def send_cancel_command_to_device():
+    # Send an HTTP request (or MQTT, depending on your setup) to your IoT device
+    # Example: an HTTP POST request to cancel the timer
+    url = "http://<iot_device_ip>/cancel_timer"  # Replace with actual IoT device API endpoint
+    response = requests.post(url)
+    return response
