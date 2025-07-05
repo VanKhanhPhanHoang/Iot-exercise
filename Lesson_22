@@ -1,1 +1,24 @@
+# Pseudocode for handling the top intent in the serverless function
+def handle_luis_response(luis_response):
+    # Check if the top intent is 'CancelTimer'
+    if luis_response['topIntent'] == 'CancelTimer':
+        # Log the intent recognition for debugging
+        print("Cancel timer intent recognized.")
+        
+        # Perform the cancel operation (e.g., stop the timer, reset it)
+        cancel_timer()
+        
+        # Send appropriate response back to the user
+        return "The timer has been cancelled."
+
+    # Handle other intents if necessary
+    else:
+        # Handle other intents like setting a timer, etc.
+        return "I didn't recognize that command."
+    
+def cancel_timer():
+    # Logic to cancel or reset the timer
+    print("Timer has been cancelled.")
+    # Code to stop the timer
+    # Reset timer state or stop countdown logic here
 
