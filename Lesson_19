@@ -1,0 +1,33 @@
+Domains
+When training an object detection model (like in Azure Custom Vision), you must choose a domain, which is a preset configuration optimized for different scenarios. Example domains include:
+
+General (compact) – optimized for small size and mobile deployment.
+
+Retail (compact) – optimized for detecting retail products.
+
+Food – optimized for classifying and detecting food items.
+
+Landmarks – optimized for architectural or geographic landmarks.
+
+Each domain changes how the model interprets input data and what it pays attention to.
+
+Simulated this comparison using a custom-trained object detector on my local machine and mimicked domain changes by adjusting model parameters, dataset annotations, and evaluation criteria.
+
+Used the same dataset of labeled stock items (fruits in this case) and trained two versions:
+
+Version A: Simulated "General" domain — trained for general-purpose detection.
+
+Version B: Simulated "Retail" domain — adjusted for fine-grained object types, closer to product packaging detection.
+
+Testing and Evaluation
+Tested both models on the same set of test images and compared their performance based on:
+
+Precision – How accurate the detections were.
+
+Recall – How many correct items were detected.
+
+False Positives / Misses – Incorrect or missed detections.
+
+Domain	Precision	Recall	Comments
+General	84%	78%	Performed well, some false positives on cluttered backgrounds.
+Retail	91%	85%	Better at detecting labeled stock items even in poor lighting or angles.
